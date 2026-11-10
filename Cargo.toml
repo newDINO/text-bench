@@ -1,0 +1,15 @@
+[package]
+name = "text-bench"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dev-dependencies]
+criterion = "0.8"
+ab_glyph = "0.2"
+glyph_brush_layout = "0.2"
+tinim-text = { path = "../tinim-gui/crates/tinim-text" }
+
+[[bench]]
+name = "text"
+harness = false
